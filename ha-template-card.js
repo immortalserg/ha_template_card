@@ -90,5 +90,5 @@ class SingleGaugeEditor extends HTMLElement{
 
 class BleEditor extends Editor{constructor(){super();this.ble=true}}
 for(let [n,k] of [['ha-template-gauge-card',SingleGauge],['ha-template-gauge-card-editor',SingleGaugeEditor],['plant-monitor-card',PlantCard],['flower-ble-card',BleCard],['plant-monitor-card-editor',Editor],['flower-ble-card-editor',BleEditor]])if(!customElements.get(n))customElements.define(n,k);
-console.info('ha_template_card v0.1.11');
+console.info('ha_template_card v0.1.12');
 window.customCards=window.customCards||[];window.customCards.push({type:'ha-template-gauge-card',name:'HA Template Gauge Card',description:'Single sensor with five optional custom color zones'},{type:'plant-monitor-card',name:'Plant Monitor Card',description:'Seven plant gauges with visual editor'},{type:'flower-ble-card',name:'Flower BLE Card',description:'Bluetooth and battery with visual editor'});
