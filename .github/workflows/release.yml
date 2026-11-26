@@ -20,5 +20,5 @@ jobs:
           if gh release view "$version" >/dev/null 2>&1; then
             echo "Release already exists"
           else
-            gh release create "$version" ha-template-card.js --target "$GITHUB_SHA" --title "ha_template_card $version" --generate-notes --latest
+            gh release create "$version" ha-template-card.js --target "$GITHUB_SHA" --title "HA Template Card $version" --generate-notes --latest
           fi
